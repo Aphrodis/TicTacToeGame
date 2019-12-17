@@ -1,0 +1,122 @@
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+html, * {
+    font-family: 'EB Garamond', serif;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.mydiv {
+    width: 50vw;
+    /* padding-right: 10px; */
+    /* padding-left: 10px; */
+    margin-right: auto;
+    margin-left: auto;
+	max-width: 430px;
+    margin-top: 10px;
+}
+.title {
+	font-size: 24px;
+}
+#scoreboard {
+	font-size: 22px;
+	font-weight: bold;
+    margin-top: 23px;
+}
+.game-board {
+    max-width: 400px;
+    max-height: 400px;
+    height: 40vw;
+    width: 40vw;
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    margin-right: auto;
+    margin-left: auto;
+}
+.square {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    font-size: 5vmin;
+    border: 3px solid rgb(97, 89, 89);
+	transition: .3s;
+}
+.right-border {
+	border-right: 0;
+}
+.bottom-border {
+	border-bottom: 0;
+}
+.t-letter {
+    background-color: rgb(14, 187, 172);
+	color: white;
+	font-size: 10vmin;
+	text-shadow: 3px 3px 7px rgb(44, 38, 38);
+}
+
+.play {
+	text-align: center;
+    background-color: #3273dc;
+    border-color: transparent;
+    color:white;
+    border-radius: 6px;
+    border: none;
+    padding: 12px;
+    letter-spacing: 1.6px;
+    font-weight: 600;
+    width: 80%;
+    margin-left: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.play:hover {
+	color: white;
+	background-color: #407bdb;
+}
+#start {
+    padding-top: 15px;
+}
+.button {
+    /* font-weight: bold; */
+    font-size: 14px;
+    cursor: pointer;
+}
+.optionBtn {
+    background-color: rgb(83, 79, 79);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    padding: 12px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.optionBtn:hover, .x-selected {
+    background-color: rgb(8, 170, 156);
+    color: white;
+    font-weight: bold;
+}
+.optionBtn:focus {
+	border: none;
+}
+.player-div {
+    float: left;
+    margin: 0 auto;
+    margin-left: 54px;
+    margin-right: 74px;
+}
+.game-element {
+	align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+/* .text {
+	color: black;
+} */
+#computer-scores, #player-scores {
+    text-align: center;
+}
