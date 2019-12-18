@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="../css/index.css">
     <title>Tic Tac Toe Game</title>
 </head>
@@ -14,8 +14,18 @@
     <div class="container">
         <section class="wrapper">
             <div class="mydiv">
-                <h1 class="title game-element text" id="display-response">Welcome to Tic Tac Toe Game</h1>
+                <h1 class="title game-element text">Welcome To Tic Tac Toe Game</h1>
+                <h1 class="title game-element text" id="display-response"></h1>
             </div>
+
+            <div class="mydiv text">
+                <p>Pick the symbol you would like to use:</p>
+                <div class="buttons">
+                    <button class="button optionBtn x-selected" id="x-first" data-symbol="X">X (Go First)</button>
+                    <button class="button optionBtn" id="second-player" data-symbol="0">0 (Go Second)</button>
+                </div>
+            </div>
+
             <div class="mydiv text" id="scoreboard">
                 <div class="game-element text-centered player-div">
                     <div>
@@ -47,13 +57,14 @@
             </div>
 
             <div class="mydiv text" id="start">
-                <button class="button play" id="start-game">Play Game</button>
+                <button class="button play" id="start-game">START GAME</button>
             </div>
 
-            <div class="mydiv text">
+            <!-- <div class="mydiv text">
+                <p>Pick the symbol you would like to use:</p>
                 <button class="button optionBtn x-selected" id="x-first" data-symbol="X">X (Go First)</button>
-                <button class="button optionBtn" id="0-second" data-symbol="0">0 (Go Second)</button>
-            </div>
+                <button class="button optionBtn" id="second-player" data-symbol="0">0 (Go Second)</button>
+            </div> -->
         </section>
     </div>
     <script src="../js/index.js"></script>
